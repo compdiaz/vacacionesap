@@ -1,0 +1,29 @@
+{
+    "idiomas": [
+      {
+        "codigo": "es",
+        "nombre": "Castellano"
+      },
+      {
+        "codigo": "ca",
+        "nombre": "Català"
+      },
+      {
+        "codigo": "en",
+        "nombre": "English"
+      },
+      {
+        "codigo": "eu",
+        "nombre": "Euskara"
+      },
+      {
+        "codigo": "gl",
+        "nombre": "Galego"
+      },
+      {
+        "codigo": "va",
+        "nombre": "Valencià"
+      }
+    ]
+  }
+  
