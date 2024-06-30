@@ -57,6 +57,10 @@
         "settings": {
           "bundleName": "vacacionesap.i18n.i18n"
         }
+      },
+      "cabecera":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/cabecera.json"
       }
     },
     "resources": {

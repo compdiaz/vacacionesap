@@ -1,0 +1,17 @@
+{
+    "personal_number": "123456", 
+    "name_surname": {
+        "first_name": "Juan", 
+        "last_name": "Perez" 
+    },
+    "user_mju": "MJU12345", 
+    "division_text": "Division de Personal A",
+    "personal_group": {
+        "code": "B", 
+        "description": "Grupo B" 
+    },
+    "area": {
+        "code": "01",
+        "description": "Área Administrativa"
+    }
+}
