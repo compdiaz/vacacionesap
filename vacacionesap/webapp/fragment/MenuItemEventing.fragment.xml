@@ -5,7 +5,7 @@
 		<u:Menu>
 			<u:MenuItem
 				text="Acerca de"
-				select="handleMenuItemPress"
+				select="onhandleMenuItemSelect"
 				icon="sap-icon://hint"/>
 			<u:MenuItem
 				text="Apariencia"
@@ -16,14 +16,23 @@
 				icon="sap-icon://globe">
 				<u:Menu>
 					<u:MenuItem
-						text="1st Sub Item"
+						text="Castellano"
 						select="handleMenuItemPress" />
 					<u:MenuItem
-						text="2nd Sub Item"
+						text="English"
 						select="handleMenuItemPress" />
 					<u:MenuItem
-						text="3rd Sub Item but inactive"
+						text="Euskara"
 						enabled="false" />
+						<u:MenuItem
+						text="Galego"
+						enabled="false" />
+						<u:MenuItem
+						text="Català"
+						enabled="false" />
+											<u:MenuItem
+						text="Valencià"
+						select="handleMenuItemPress" />
 				</u:Menu>
 			</u:MenuItem>
 			

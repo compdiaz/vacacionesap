@@ -1,22 +1,9 @@
-<mvc:View
-    controllerName="vacacionesap.controller.App"
-    xmlns:mvc="sap.ui.core.mvc"
+<c:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
     xmlns:tnt="sap.tnt"
-    xmlns:semantic="sap.f"
-    	xmlns:l="sap.ui.layout"
-    xmlns="sap.m"
-    displayBlock="true"
 >
-    <Shell>
-
-        <App id="A1">
-
-            <pages>
-            
-                <Page>
-                
-                <headerContent>
-            <tnt:ToolHeader
+ <tnt:ToolHeader
                 id="shellLikeToolHeader"
                 class="sapUiTinyMargin"
                 width="100%"
@@ -38,16 +25,6 @@
                 </Button>
                 <Image
                     src="https://www.mjusticia.gob.es/Siteassets/images/logos/logo-ministerio-mpjrc.svg"
-                    decorative="false"
-                    press="onLogoPressed"
-                    tooltip="Ministerio de Justicia"
-                >
-                    <layoutData>
-                        <OverflowToolbarLayoutData priority="NeverOverflow" />
-                    </layoutData>
-                </Image>
-                <Image
-                    src="https://www.sapimsa.es/wp-content/uploads/2022/04/Frame-8.png"
                     decorative="false"
                     press="onLogoPressed"
                     tooltip="Ministerio de Justicia"
@@ -101,13 +78,6 @@
                     tooltip="Search"
                 />
 <l:HorizontalLayout>
-                <Button
-                    icon= "sap-icon://document"
-                    type="Transparent"
-                    id="manualButton"
-                    tooltip="Manual" >
-                </Button>
-
                 <OverflowToolbarButton
                     icon="sap-icon://action-settings"
                    id="openMenu"
@@ -116,14 +86,13 @@
                     press="handlePressOpenMenu"
                     ariaHasPopup="Menu"
                 />
-               
               </l:HorizontalLayout>  	
 		
 	
                 <Button
                     icon="sap-icon://bell"
                     type="Transparent"
-                    tooltip="Notificación"
+                    tooltip="Notification"
                 >
                     <layoutData>
                         <OverflowToolbarLayoutData priority="NeverOverflow" />
@@ -142,52 +111,5 @@
                     </layoutData>
                 </Avatar>
             </tnt:ToolHeader>
-        </headerContent>
-
-		
-                    <content>
-                        	<tnt:NavigationList
-		id="navigationList"
-		width="210px"
-		selectedKey="subItem2">
-		<tnt:NavigationListItem text="Solicitud" key="rootItem1" icon="sap-icon://request">
-			<tnt:NavigationListItem text="Vacaciones" />
-			<tnt:NavigationListItem text="Asuntos Particulares" id="subItemTwo" key="subItem2" />
-			<tnt:NavigationListItem text="Invisible Sub Item 4" visible="false" />
-			<tnt:NavigationListItem text="Invisible Sub Item 5" visible="false" />
-		</tnt:NavigationListItem>
-		<tnt:NavigationListItem
-			text="Invisible Section"
-			icon="sap-icon://employee"
-			visible="false">
-			<tnt:NavigationListItem text="Sub Item 1" />
-			<tnt:NavigationListItem text="Sub Item 2" />
-			<tnt:NavigationListItem text="Sub Item 3" />
-		</tnt:NavigationListItem>
-
-		<tnt:NavigationListItem text="Gestión" icon="sap-icon://manager">
-			<tnt:NavigationListItem text="Sub Item 1" />
-			<tnt:NavigationListItem text="Seguimiento" />
-			<tnt:NavigationListItem text="Sub Item 3" />
-            </tnt:NavigationListItem>
-
-            <tnt:NavigationListItem text="Informes" icon="sap-icon://manager-insight">
-			<tnt:NavigationListItem text="Sub Item 1" />
-			<tnt:NavigationListItem text="Estadisticas" />
-		</tnt:NavigationListItem>
-
-            <tnt:NavigationListItem text="Incidencias" icon="sap-icon://incident">
-			<tnt:NavigationListItem text="Sub Item 1" />
-			<tnt:NavigationListItem text="Sub Item 2" />
-		</tnt:NavigationListItem>
-	</tnt:NavigationList>
-   
-                    </content>
-                    
-                </Page>
-
-            </pages>
-
-        </App>
-    </Shell>
-</mvc:View>
+           
+</c:FragmentDefinition>

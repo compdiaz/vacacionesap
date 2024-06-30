@@ -38,6 +38,18 @@ function (MessageToast, Fragment, Controller, Popup) {
 
 		handleTextFieldItemPress: function(oEvent) {
 			MessageToast.show("'" + oEvent.getParameter("item").getValue() + "' entered");
+		},
+        onCollapseExpandPress: function () {
+			var oNavigationList = this.byId("navigationList");
+			var bExpanded = oNavigationList.getExpanded();
+
+			oNavigationList.setExpanded(!bExpanded);
+            console.log(bExpanded);
+		},
+
+		onHideShowSubItemPress: function () {
+			var oNavListItem = this.byId("subItemTwo");
+			oNavListItem.setVisible(!oNavListItem.getVisible());
 		}
 
 	});
